@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kebs Kebab House</title>
+  <meta name="description" content="Kebs Kebab House - najlepszy kebab w Tomaszowie Mazowieckim. Sprawdź nasze menu i zamów online!">
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Bebas+Neue&display=swap" rel="stylesheet">
+  <!-- Font Awesome CDN do ikon social media -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-..." crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Bebas Neue', sans-serif;
+      background: linear-gradient(135deg, #1e1e1e 0%, #2a2a2a 100%);
+      color: #f0f0f0;
+    }
+
+    header {
+      background: url('https://cdn.pixabay.com/photo/2017/09/04/18/39/graffiti-2715647_1280.jpg') no-repeat center center;
+      background-size: cover;
+      color: white;
+      padding: 80px 20px;
+      text-align: center;
+      text-shadow: 2px 2px 10px #000;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 4em;
+      font-family: 'Anton', sans-serif;
+      letter-spacing: 2px;
+    }
+
+    header p {
+      font-size: 1.8em;
+      margin-top: 10px;
+    }
+
+    nav {
+      background-color: #ff003c;
+      text-align: center;
+      padding: 10px 0;
+    }
+
+    nav a {
+      color: white;
+      margin: 0 15px;
+      text-decoration: none;
+      font-size: 1.2em;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    .section {
+      padding: 40px 20px;
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+
+    .section h2 {
+      font-family: 'Anton', sans-serif;
+      font-size: 2.5em;
+      color: #ffdd00;
+      border-bottom: 2px solid #ffdd00;
+      display: inline-block;
+      margin-bottom: 25px;
+    }
+
+    .menu-list {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 20px;
+      margin-top: 20px;
+    }
+
+    .menu-item {
+      background-color: #2f2f2f;
+      border: 2px solid #ff003c;
+      border-radius: 10px;
+      padding: 15px;
+      font-size: 1.2em;
+    }
+
+    .menu-item h3 {
+      margin-top: 0;
+      color: #ffdd00;
+    }
+
+    .menu-item img {
+      width: 100%;
+      border-radius: 8px;
+      margin-top: 10px;
+      object-fit: cover;
+      max-height: 180px;
+    }
+
+    .hours ul, .contact p {
+      font-size: 1.3em;
+      line-height: 1.6;
+    }
+
+    .contact a.button {
+      display: inline-block;
+      background-color: #ffdd00;
+      color: #000;
+      font-weight: bold;
+      padding: 12px 24px;
+      border-radius: 8px;
+      text-decoration: none;
+      margin-top: 20px;
+      font-size: 1.2em;
+      transition: background-color 0.3s ease;
+    }
+
+    .contact a.button:hover {
+      background-color: #ffe94d;
+    }
+
+    .map-container {
+      margin-top: 30px;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 0 10px #000;
+      /* Dodany padding i max-width na mobilkach w media query */
+    }
+
+    footer {
+      background-color: #111;
+      color: white;
+      text-align: center;
+      padding: 25px;
+      margin-top: 40px;
+    }
+
+    .social-icons a {
+      margin: 0 15px;
+      color: #ffdd00;
+      text-decoration: none;
+      font-size: 1.6em;
+      transition: color 0.3s ease;
+      vertical-align: middle;
+    }
+
+    .social-icons a:hover {
+      color: #fff100;
+      text-decoration: none;
+    }
+
+    .social-icons a .fab {
+      margin-right: 8px;
+    }
+
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 2.5em;
+      }
+      header p {
+        font-size: 1.2em;
+      }
+
+      /* Wyśrodkowanie przycisku na małych ekranach */
+      .contact a.button {
+        display: block;
+        width: fit-content;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      /* Marginesy mapy na mobilkach */
+      .map-container {
+        margin-left: 10px;
+        margin-right: 10px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Kebs Kebab House</h1>
+    <p>Najlepszy kebab w Tomaszowie Mazowieckim!</p>
+  </header>
+
+  <nav>
+    <a href="#menu">Menu</a>
+    <a href="#hours">Godziny</a>
+    <a href="#kontakt">Kontakt</a>
+  </nav>
+
+  <section class="section menu" id="menu">
+    <h2>Menu</h2>
+    <div class="menu-list">
+      <div class="menu-item">
+        <h3>1. Kebab na cienkim cieście</h3>
+        <p>Mały 16zł / Śr. 23zł / Duży 32zł / Mega 35zł</p>
+        <img src="https://cdn.pixabay.com/photo/2020/03/21/10/35/kebab-4953635_1280.jpg" alt="Kebab na cienkim cieście">
+      </div>
+      <div class="menu-item">
+        <h3>2. Kebab na cieście z serem</h3>
+        <p>Mały 20zł / Śr. 26zł / Duży 34zł / Mega 37zł</p>
+        <img src="https://cdn.pixabay.com/photo/2017/08/30/13/18/kebab-2698396_1280.jpg" alt="Kebab na cieście z serem">
+      </div>
+      <div class="menu-item">
+        <h3>3. Fryto kebab</h3>
+        <p>20zł / 26zł / 34zł / 37zł</p>
+        <img src="https://cdn.pixabay.com/photo/2018/02/03/23/07/food-3134010_1280.jpg" alt="Fryto kebab">
+      </div>
+      <div class="menu-item">
+        <h3>4. Rollo kebab amerykański</h3>
+        <p>23zł / 28zł / 34zł / 37zł</p>
+        <img src="https://cdn.pixabay.com/photo/2016/03/05/19/02/kebab-1239423_1280.jpg" alt="Rollo kebab amerykański">
+      </div>
+      <div class="menu-item">
+        <h3>5. Tost z serem</h3>
+        <p>22zł / 32zł</p>
+        <img src="https://cdn.pixabay.com/photo/2016/11/18/16/53/toast-1835085_1280.jpg" alt="Tost z serem">
+      </div>
+      <div class="menu-item">
+        <h3>6. Kebab w bułce</h3>
+        <p>22zł / 27zł / 30zł / 33zł</p>
+        <img src="https://cdn.pixabay.com/photo/2017/03/03/19/45/kebab-2111200_1280.jpg" alt="Kebab w bułce">
+      </div>
+      <div class="menu-item">
+        <h3>7. Lawasz</h3>
+        <p>22zł / 32zł</p>
+        <img src="https://cdn.pixabay.com/photo/2018/06/09/18/34/shawarma-3465104_1280.jpg" alt="Lawasz">
+      </div>
+      <div class="menu-item">
+        <h3>8. Fet kebab</h3>
+        <p>22zł / 32zł</p>
+        <img src="https://cdn.pixabay.com/photo/2017/02/23/13/32/greek-salad-2090620_1280.jpg" alt="Fet kebab">
+      </div>
+      <div class="menu-item">
+        <h3>9. Box</h3>
+        <p>20zł / 27zł</p>
+        <img src="https://cdn.pixabay.com/photo/2020/12/03/16/14/fast-food-5800429_1280.jpg" alt="Box">
+      </div>
+      <div class="menu-item">
+        <h3>10. Kebab na talerzu</h3>
+        <p>27zł / 32zł / 33zł / 36zł</p>
+        <img src="https://cdn.pixabay.com/photo/2018/10/13/16/08/food-3747639_1280.jpg" alt="Kebab na talerzu">
+      </div>
+      <div class="menu-item">
+        <h3>11. Zestaw nuggets</h3>
+        <p>18zł / 29zł</p>
+        <img src="https://cdn.pixabay.com/photo/2017/03/14/12/08/chicken-nuggets-2143339_1280.jpg" alt="Zestaw nuggets">
+      </div>
+      <div class="menu-item">
+        <h3>12. Sałatka grecka</h3>
+        <p>18zł / 22zł</p>
+        <img src="https://cdn.pixabay.com/photo/2017/01/30/13/55/greek-salad-2022161_1280.jpg" alt="Sałatka grecka">
+      </div>
+      <div class="menu-item">
+        <h3>13. Falafel rolo</h3>
+        <p>16zł / 20zł</p>
+        <img src="https://cdn.pixabay.com/photo/2016/03/05/19/02/falafel-1239436_1280.jpg" alt="Falafel rolo">
+      </div>
+      <div class="menu-item">
+        <h3>14. Dodatki</h3>
+        <p>Dodatkowe mięso – 8zł<br> Dodatkowe frytki – 6zł</p>
+      </div>
+      <div class="menu-item">
+        <h3>15. Napoje</h3>
+        <p>Coca-cola, Mirinda, Lipton, Pepsi – 6.5zł<br> Woda – 3.5zł<br> Ayran – 4zł</p>
+        <img src="https://cdn.pixabay.com/photo/2020/06/08/18/58/soda-5275204_1280.jpg" alt="Napoje">
+      </div>
+    </div>
+  </section>
+
+  <section class="section hours" id="hours">
+    <h2>Godziny otwarcia</h2>
+    <ul>
+      <li>Poniedziałek – Czwartek: 10:00 – 23:00</li>
+      <li>Piątek – Sobota: 10:00 – 01:00</li>
+      <li>Niedziela: 11:00 – 23:00</li>
+    </ul>
+  </section>
+
+  <section class="section contact" id="kontakt">
+    <h2>Kontakt i dostawa</h2>
+    <p>📍 Ul. Strzelecka 17, Tomaszów Mazowiecki</p>
+    <p>📞 <a href="tel:883901763" style="color: #ffdd00; text-decoration: none;">883 901 763</a></p>
+    <p>Dostawa na terenie miasta – 6 zł!</p>
+    <a href="tel:883901763" class="button">Zadzwoń i zamów teraz</a>
+
+    <div class="map-container">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2451.090626649993!2d20.02032197684248!3d51.528546209547264"
+        width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+      </iframe>
+    </div>
+  </section>
+
+  <footer>
+    <div class="social-icons">
+      <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i>Facebook</a>
+      <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i>Instagram</a>
+    </div>
+    <p>&copy; 2025 Kebs Kebab House. Wszystkie prawa zastrzeżone.</p>
+  </footer>
+</body>
+</html>
